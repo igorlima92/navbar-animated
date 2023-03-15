@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+:root {
+    --font-family: 'Mukta', sans-serif;
+}
+
+body{
+    font-family: var(--font-family);
+    background: #2c3e50;
+}
+
+nav{
+    position: relative;
+    margin: 270px auto 0;
+    width: 500px;
+    height: 50px;
+    background: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 10px 5px 0 rgba(0,0,0,.9);
+}
+
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+nav a:nth-child(1){
+    width: 100px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation{
+    width: 100px;
+    left:0;
+}
+
+nav a:nth-child(2){
+    width: 100px;
+}
+
+nav a:nth-child(2):hover~.animation{
+    width: 100px;
+    left:100px;
+}
+
+nav a:nth-child(3){
+    width: 100px;
+}
+
+nav a:nth-child(3):hover~.animation{
+    width: 100px;
+    left:200px;
+}
+
+nav a:nth-child(4){
+    width: 100px;
+}
+
+nav a:nth-child(4):hover~.animation{
+    width: 100px;
+    left:300px;
+}
+
+nav a:nth-child(5){
+    width: 100px;
+}
+
+nav a:nth-child(5):hover~.animation{
+    width: 100px;
+    left:400px;
+}
